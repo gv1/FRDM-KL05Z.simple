@@ -1,0 +1,29 @@
+Reference:
+Using ld The GNU linker
+	http://wwwcdf.pd.infn.it/localdoc/ld.pdf
+
+Cortex-M3 Interrupt Vector Table 
+	https://embeddedfreak.wordpress.com/2009/08/07/cortex-m3-interrupt-vector-table/
+
+Kinetis L - gpio demo using CMSIS files, ARM GCC
+	https://github.com/0xc0170/kinetis_klxx_gcc
+	kinetis_klxx_gcc-master/cmsis/MKL05Z4/startup_MKL05Z4.s
+
+Simplest bare metal program for ARM
+	https://balau82.wordpress.com/2010/02/14/simplest-bare-metal-program-for-arm/
+
+
+Steps:
+1. Create elf file 'test':
+	make 
+
+2. Start gdb server:
+	make jlink
+
+3. flash proram on FRDM-KL05Z, and start debug
+	make flash
+   or
+
+4. Once program is flashed, start debug from ram:
+	make ram
+
